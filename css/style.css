@@ -1,0 +1,18 @@
+:root{
+  --bs-blue:blue;
+}
+
+
+.container{
+    max-width: 1350px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--bs-blue);
+}
+@media screen and (max-width:1400px) {
+    .container{
+        padding: 0 10px;
+    }
+    
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <!-- <style>
+        .bdi{
+            color: blue;
+        }
+        li{
+            animation: stick 5s ease-in-out alternate forwards;
+            color: red;
+            position: relative;
+            top: 0;
+        }
+        .unique{
+           color: unset;
+        }
+        @keyframes stick {
+            0%{
+                left: 0px;
+            }
+            100%{
+                left: 200px;
+            }
+            
+        }
+        .bg{
+            height: 200px;
+            background: red url(./images/1647_tirupati-balaji-hd-wallpaper-01.jpg) center center cover no-repeat padding-box fixed;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="bdi">
+        <li>hi i am <bdi>srini</bdi></li>
+        <li>hjkj</li>
+        <li class="unique">srini</li>
+    </div>
+    <div class="bg">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod inventore perferendis enim ea optio cum, vitae
+            possimus quas autem quibusdam dolore aperiam maxime quae. Deserunt soluta suscipit quia consequuntur
+            perspiciatis tenetur voluptatum, id inventore maxime minima libero a sequi veniam cumque, sapiente
+            distinctio beatae iure, est facere quam? Blanditiis vel expedita, ducimus error impedit rem voluptatum
+            dignissimos, et temporibus vero aperiam iste nostrum, ab eum! Facilis est porro aliquid itaque voluptate
+            laboriosam enim, iure similique nobis hic, voluptas culpa illum libero dolore cupiditate perferendis
+            eligendi voluptatum, id praesentium repellat omnis totam? Optio ratione architecto soluta possimus ipsa eos,
+            impedit saepe molestias rem sint deserunt temporibus explicabo ab adipisci laudantium cum rerum dignissimos
+            cumque facere mollitia libero facilis fugit! Numquam harum libero alias, facilis blanditiis esse cupiditate
+            rerum praesentium eum quisquam rem ipsam. Quas totam aperiam nisi obcaecati vel at odio, sit harum corporis
+            a nemo eos ab exercitationem quis expedita? Similique, veritatis aut explicabo ipsa vero veniam autem
+            consequuntur beatae vitae earum eligendi atque delectus, dolores unde architecto! Numquam ad eum ipsa
+            pariatur, error quibusdam aperiam soluta suscipit necessitatibus asperiores fugit tenetur eius. Quod
+            incidunt quam ipsum, voluptates placeat quas ut animi repudiandae minima, ipsa voluptate itaque autem ullam
+            voluptatem.</p>
+    </div>
+    <div class="bg">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod inventore perferendis enim ea optio cum, vitae
+            possimus quas autem quibusdam dolore aperiam maxime quae. Deserunt soluta suscipit quia consequuntur
+            perspiciatis tenetur voluptatum, id inventore maxime minima libero a sequi veniam cumque, sapiente
+            distinctio beatae iure, est facere quam? Blanditiis vel expedita, ducimus error impedit rem voluptatum
+            dignissimos, et temporibus vero aperiam iste nostrum, ab eum! Facilis est porro aliquid itaque voluptate
+            laboriosam enim, iure similique nobis hic, voluptas culpa illum libero dolore cupiditate perferendis
+            eligendi voluptatum, id praesentium repellat omnis totam? Optio ratione architecto soluta possimus ipsa eos,
+            impedit saepe molestias rem sint deserunt temporibus explicabo ab adipisci laudantium cum rerum dignissimos
+            cumque facere mollitia libero facilis fugit! Numquam harum libero alias, facilis blanditiis esse cupiditate
+            rerum praesentium eum quisquam rem ipsam. Quas totam aperiam nisi obcaecati vel at odio, sit harum corporis
+            a nemo eos ab exercitationem quis expedita? Similique, veritatis aut explicabo ipsa vero veniam autem
+            consequuntur beatae vitae earum eligendi atque delectus, dolores unde architecto! Numquam ad eum ipsa
+            pariatur, error quibusdam aperiam soluta suscipit necessitatibus asperiores fugit tenetur eius. Quod
+            incidunt quam ipsum, voluptates placeat quas ut animi repudiandae minima, ipsa voluptate itaque autem ullam
+            voluptatem.</p>
+    </div>
+    <button>hide</button>
+    <span>hi srini all the best</span>
+    <span>hi srini all</span>
+
+    <div class="sd" style="padding: 20px;">
+        <input type="text" id="sdd">
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+
+
+
+    <!-- <script>
+        $(document).ready(function(){
+            $('button').on({
+                mouseenter:function(){
+                    $('.bg').css("background-color","red")
+                },
+                click:function(){
+                    $('.bg').css({"background-color":"blue","color":"red"})
+                },
+                click:function(){
+                    $('span').slideToggle("slow");
+                }
+            })
+    })
+
+
+    </script> -->
+
+    <script>
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //         $('span').hide(function(){
+        //             alert('hi');
+        //         })
+        //     });
+        // })
+
+        // $('button').click(function () {
+        //     alert("html" + " " + $('span').html());
+        // })
+        // $('#sdd').keypress(function(){
+        //     $(this).css({
+        //         "background":"red"
+        //     })
+        // })
+        // $('#sdd').keypress(function(){
+        //     console.log($(this).innerWidth());
+        // })
+
+        var users = ["srini", "bugtreat", "data"];
+
+        for (var i = 0; i < users.length; i++) {
+            console.log("hi" + " " + users[i])
+        }
+
+        function data(call) {
+            gain();
+            console.log("hi");
+        }
+        function gain() {
+            console.log("ha");
+        }
+
+        data(gain);
+
+        var person_1 = {
+            id: 1,
+            name: "srini",
+            Fullname: function (age, address) {
+                console.log(this.id + " " + age + " " + address);
+            }
+        }
+        var person_2 = {
+            id: 2,
+            name: "vasa",
+        }
+        var person_3 = {
+            id: 3,
+            name: "ram",
+        }
+
+        person_1.Fullname(22, "villapuram")
+        person_1.Fullname.apply(person_2, [19, "hi"])
+        var x = person_1.Fullname.bind(person_2, 21, "puram");
+        x();
+
+        var btn = document.querySelector('button');
+        btn.addEventListener("click", function () {
+            alert("hi");
+        })
+
+
+        var det = {
+            id: 1,
+            name: "srini"
+        }
+        var st = {
+            id: 2,
+            name: "vicky"
+        }
+
+        var total = Object.assign(det, st);
+        console.log(det);
+        console.log(st);
+        console.log(total)
+
+        Object.seal(st);
+        st.name = "vffasa";
+        console.log(st.name)
+
+        delete st.name;
+        console.log(st.name)
+
+        const dsd = "sadadd scszcszc";
+        const dds2 = /s/g;
+        console.log(dsd.match(dds2))
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
